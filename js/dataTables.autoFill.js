@@ -454,7 +454,7 @@ $.extend( AutoFill.prototype, {
 		var nodes = [];
 		var fields = editor.fields();
 
-		for ( var i=0, ien=cells.length ; i<ien ; i++ ) {
+		for ( var i=0, iLen=cells.length ; i<iLen ; i++ ) {
 			for ( var j=0, jen=cells[i].length ; j<jen ; j++ ) {
 				var cell = cells[i][j];
 
@@ -988,7 +988,7 @@ $.extend( AutoFill.prototype, {
 				true;
 
 		if ( update ) {
-			for ( var i=0, ien=cells.length ; i<ien ; i++ ) {
+			for ( var i=0, iLen=cells.length ; i<iLen ; i++ ) {
 				for ( var j=0, jen=cells[i].length ; j<jen ; j++ ) {
 					cell = cells[i][j];
 
@@ -1034,7 +1034,7 @@ AutoFill.actions = {
 			var value = cells[0][0].data * 1;
 			var increment = $('input', node).val() * 1;
 
-			for ( var i=0, ien=cells.length ; i<ien ; i++ ) {
+			for ( var i=0, iLen=cells.length ; i<iLen ; i++ ) {
 				for ( var j=0, jen=cells[i].length ; j<jen ; j++ ) {
 					cells[i][j].set = value;
 
@@ -1056,7 +1056,7 @@ AutoFill.actions = {
 		execute: function ( dt, cells, node ) {
 			var value = cells[0][0].data;
 
-			for ( var i=0, ien=cells.length ; i<ien ; i++ ) {
+			for ( var i=0, iLen=cells.length ; i<iLen ; i++ ) {
 				for ( var j=0, jen=cells[i].length ; j<jen ; j++ ) {
 					cells[i][j].set = value;
 				}
@@ -1074,7 +1074,7 @@ AutoFill.actions = {
 		},
 
 		execute: function ( dt, cells, node ) {
-			for ( var i=0, ien=cells.length ; i<ien ; i++ ) {
+			for ( var i=0, iLen=cells.length ; i<iLen ; i++ ) {
 				for ( var j=0, jen=cells[i].length ; j<jen ; j++ ) {
 					cells[i][j].set = cells[i][0].data;
 				}
@@ -1092,7 +1092,7 @@ AutoFill.actions = {
 		},
 
 		execute: function ( dt, cells, node ) {
-			for ( var i=0, ien=cells.length ; i<ien ; i++ ) {
+			for ( var i=0, iLen=cells.length ; i<iLen ; i++ ) {
 				for ( var j=0, jen=cells[i].length ; j<jen ; j++ ) {
 					cells[i][j].set = cells[0][j].data;
 				}

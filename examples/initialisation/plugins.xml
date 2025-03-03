@@ -20,7 +20,7 @@ DataTable.AutoFill.actions.names = {
 		// Modify the name and set the new values
 		var surname = cells[0][0].data.split(' ')[1];
 
-		for (var i = 0, ien = cells.length; i < ien; i++) {
+		for (var i = 0, iLen = cells.length; i < iLen; i++) {
 			var name = cells[i][0].data.split(' ');
 
 			cells[i][0].set = name[0] + ' ' + surname;
@@ -52,7 +52,7 @@ DataTable.AutoFill.actions.names = {
 		// Modify the name and set the new values
 		var surname = cells[0][0].data.split(' ')[1];
 
-		for (var i = 0, ien = cells.length; i < ien; i++) {
+		for (var i = 0, iLen = cells.length; i < iLen; i++) {
 			var name = cells[i][0].data.split(' ');
 
 			cells[i][0].set = name[0] + ' ' + surname;

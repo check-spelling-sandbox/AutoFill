@@ -959,7 +959,7 @@ $.extend( AutoFill.prototype, {
 	 *   be false internally to do nothing. This is not documented for plug-ins
 	 *   and is used only by the cancel option.
 	 * @param {array} cells Information about the selected cells from the key
-	 *     up function, argumented with the set values
+	 *     up function, augmented with the set values
 	 * @private
 	 */
 	_update: function ( result, cells )
